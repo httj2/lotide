@@ -1,18 +1,18 @@
 const head = function(array) {
   return array[0];
 };
-const assertEqual = function(head, num) {
-  if (head === num) {
-    console.log(`Assertion Failed: ${head} === ${num}`);
-  } else {
-    console.log(`Assertion Passed: ${head} !== ${num}`);
-  }
-};
+// const assertEqual = function(head, num) {
+//   if (head === num) {
+//     console.log(`Assertion Failed: ${head} === ${num}`);
+//   } else {
+//     console.log(`Assertion Passed: ${head} !== ${num}`);
+//   }
+// };
 
 
 // TEST CODE
-assertEqual(head([5,6,7]), 5);
-assertEqual(head([]), "Hello");
+// assertEqual(head([5,6,7]), 5);
+// assertEqual(head([]), "Hello");
 
 
 
