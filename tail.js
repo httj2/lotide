@@ -3,11 +3,11 @@ const tail = function(array) {
   return array.slice(1);
 };
 
-const assertEqual = function(result, num) {
-  if (result === num) {
-    console.log(`${result} = ${num}`);
-  }
-};
+// const assertEqual = function(result, num) {
+//   if (result === num) {
+//     console.log(`${result} = ${num}`);
+//   }
+// };
 
 // Test Case: Check the original array
 // const words = ["Yo Yo", "Lighthouse", "Labs"];
