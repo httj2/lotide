@@ -1,16 +1,14 @@
 const eqArrays = function(arrayOne, arrayTwo) {
-  // compare length
-  if (arrayOne.length !== arrayTwo.length) {
-    console.log(arrayOne.length);
-    console.log(arrayTwo.length);
-    return false;
-  }
-  for (let i = 0; i < arrayOne.length; i++) {
-    if (arrayOne[i] !== arrayTwo[i]) {
-      return false;
+    if (arrayOne.length === arrayTwo.length) {
+      for (let i = 0; i < arrayOne.length; i++) {
+        if (arrayOne[i] !== arrayTwo[i]) {
+          return false;
+        }
+      }
+    } else {
+      return false
     }
-  }
-  return true;
+    return true
 };
 
 // Implement assertArraysEqual which will take in two arrays and console.log an appropriate message to the console.
