@@ -12,18 +12,9 @@ const eqArrays = function(arrayOne, arrayTwo) {
   }
   return true
 };
-
-const assertEqual = function(actual, expected) {
-  if (actual !== expected) {
-    console.log(`🛑🛑🛑Assertion Failed: ${actual} !== ${expected}`);
-  } else {
-    console.log(`✅✅✅Assertion Passed: ${actual} === ${expected}`);
-  }
-};
+module.exports = eqArrays;
 
 
-eqArrays([1, 2, 3], [1, 2, 3]); // => true
-eqArrays([1, 2, 3], [3, 2, 1]); // => false
+// eqArrays([1, 2, 3], [1, 2, 3]); // => true
+// eqArrays([1, 2, 3], [3, 2, 1]); // => false
 
-
-assertEqual(eqArrays([1, 2, 3], [1, 2, 3, 5]), true); // => should PASS
