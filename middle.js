@@ -1,26 +1,3 @@
-const assertArraysEqual = function(arrayOne, arrayTwo) {
-  if (eqArrays(arrayOne, arrayTwo)) {
-    console.log(`✅✅✅Assertion Passed`);
-  } else {
-    console.log(`🛑🛑🛑Assertion Failed`);
-  }
-};
-
-const eqArrays = function(arrayOne, arrayTwo) {
-  // compare length
-  if (arrayOne.length !== arrayTwo.length) {
-    console.log(arrayOne.length);
-    console.log(arrayTwo.length);
-    return false;
-  }
-  for (let i = 0; i < arrayOne.length; i++) {
-    if (arrayOne[i] !== arrayTwo[i]) {
-      return false;
-    }
-  }
-  return true;
-};
-
 const middle = function(array) {
   let arrays = array.length; /*  */
   let mid = [];
@@ -33,4 +10,6 @@ const middle = function(array) {
   }
   return mid;
 };
+
+module.exports = middle
 
