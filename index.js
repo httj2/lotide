@@ -6,9 +6,9 @@ const middle = require('./middle');
 
 
 module.exports = {
-  assertArraysEqual: assertArraysEqual,
-  assertEqual: assertEqual,
-  head: head,
-  tail: tail,
-  middle: middle,
+  assertArraysEqual,
+  assertEqual,
+  head,
+  tail,
+  middle,
 };
